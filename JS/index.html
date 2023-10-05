@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="colorBox" value="black" onkeyup="changeColor()">
+</body>
+<script>
+    function changeColor(){
+        const box = document.getElementById("colorBox");
+        const color = box.value;
+        const body = document.querySelector("body")
+        body.style.backgroundColor = color
+    }
+</script>
+
+</html>
